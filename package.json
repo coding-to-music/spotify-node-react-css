@@ -1,7 +1,11 @@
 {
-  "name": "sirion",
+  "name": "spotify-node-react-css",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://spotify-node-react-css.herokuapp.com",
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -18,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "NODE_ENV=test mocha --require @babel/register --require ignore-styles src/js/test/MusicDatabase.test.js",
-    "eject": "react-scripts eject"
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,5 +57,8 @@
     "mocha": "^7.1.1",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.13.1"
-  }
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
 }
