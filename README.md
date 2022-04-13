@@ -156,6 +156,7 @@ heroku create spotify-node-react-css
 heroku config:set
 
 heroku config:set PUBLIC_URL="https://spotify-node-react-css.herokuapp.com"
+
 ```
 
 ## Push to Heroku
